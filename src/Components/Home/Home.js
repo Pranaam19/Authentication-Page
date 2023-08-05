@@ -1,18 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./Home.module.css";
+
 
 
 
 function Home(props) {
   return (
-    <div >
-      <div>
+    <div className={styles.ten} >
+      <div className={styles.innerBox}>
+        <div>
         <h1>
-          <Link to="/login">Login</Link>
+          <Link to="/login">LOGIN</Link>
         </h1>
         <br />
         <h1>
-          <Link to="/signup">Signup</Link>
+          <Link to="/signup">SIGNUP</Link>
         </h1>
       </div>
 
@@ -20,6 +23,7 @@ function Home(props) {
       <br />
       <br />
       <h2> {props.name ? `Welcome - ${props.name}` : "Login please"}</h2>
+     </div>
     </div>
   );
 }
