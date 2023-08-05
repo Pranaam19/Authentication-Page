@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
+
 function Home(props) {
   return (
-    <div>
+    <div >
       <div>
         <h1>
           <Link to="/login">Login</Link>
@@ -17,8 +19,7 @@ function Home(props) {
       <br />
       <br />
       <br />
-
-      <h2>{props.name ? `Welcome - ${props.name}` : "Login please"}</h2>
+      <h2> {props.name ? `Welcome - ${props.name}` : "Login please"}</h2>
     </div>
   );
 }
