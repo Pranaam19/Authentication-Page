@@ -1,6 +1,6 @@
 # Development
 
-Check the [deplyment here](https://ant-sigma.vercel.app/)
+Check the [deployment here](https://ant-sigma.vercel.app/)
 
 # Getting Started with Create React App
 
