@@ -1,16 +1,30 @@
 .ten {
-    height: 100%;
-    min-height: 100vh;
-    width: 100%;
-    background: linear-gradient(to right, #9900ff, #80ffe3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #9900ff, #80ffe3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
   .innerBox {
     min-width: 480px;
     height: fit-content;
     width: fit-content;
+    width: -moz-fit-content;
     background-color: #9fcfeb;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     padding: 30px;
@@ -20,4 +34,171 @@
     display: flex;
     flex-direction:inherit;
     gap: 30px;
+  }
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #0dc4d4;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #99ccff, #ccf2ff);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: gradientAnimation 5s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  .navbarLink {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbarLink {
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbarLink:hover {
+    background-color: #52b1f5;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #529af1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  .navbarLink {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbarLink {
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbarLink:hover {
+    background-color: #4ab2f3;
+  }
+  .navbarItem {
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbarItem:hover {
+    background-color: #3face2;
+  }
+  .navbarList {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbarList li {
+    list-style: none;
+  }
+
+  .navbarList li a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbarList li a:hover {
+    background-color: #bae0f4;
+  }
+  .footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  .footerImg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .styledFont {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #faf9f9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
